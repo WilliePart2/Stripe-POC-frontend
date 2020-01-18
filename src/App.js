@@ -1,25 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import AccountContext from "./Context/AccountContext";
+import * as ui from './components/ui';
+import * as blocks from './components/blocks';
+
+import './style.scss';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <ui.Container>
+          <ui.Card>
+              <AccountContext>
+                  <blocks.UserWorkspace />
+              </AccountContext>
+          </ui.Card>
+      </ui.Container>
   );
 }
 
