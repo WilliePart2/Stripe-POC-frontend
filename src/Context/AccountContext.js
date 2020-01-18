@@ -17,7 +17,7 @@ const accountContextFactory = (
 
 const accountContext = React.createContext(accountContextFactory());
 
-const getUserId = () => 1;
+export const getUserId = () => 1;
 const _ = logger('Account state');
 
 const AccountContext = ({ children }) => {

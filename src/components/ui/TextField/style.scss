@@ -1,0 +1,18 @@
+.text-field {
+  color: #aab7c4;
+  display: flex;
+  flex-flow: column nowrap;
+
+  .text-field__input {
+    margin: 5px 0;
+    padding: 5px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    line-height: 20px;
+    outline: none;
+  }
+
+  .text-field__label {
+    padding: 5px 0;
+  }
+}

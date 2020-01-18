@@ -1,10 +1,12 @@
 const serverBaseUrl = () => 'http://localhost:4200';
+const getUserBase = () => `${serverBaseUrl()}/users`;
 
 const serverApi = {
     // stripeConnect: () => `${serverBaseUrl()}/callback`,
-    auth: (userId) => `${serverBaseUrl()}/user/${userId}/onboarding`,
-    login: (userId) => `${serverBaseUrl()}/users/${userId}/initialized`,
-    dashboard: (userId) => `${serverBaseUrl()}/users/${userId}/dashboard`,
+    auth: (userId) => `${getUserBase()}/${userId}/onboarding`,
+    login: (userId) => `${getUserBase()}/${userId}/initialized`,
+    dashboard: (userId) => `${getUserBase()}/${userId}/dashboard`,
+    payment: () => `${serverBaseUrl()}/payments`,
 };
 
 export { serverApi };

@@ -1,7 +1,14 @@
 .container {
   display: flex;
   flex-flow: row nowrap;
-  align-items: center;
-  justify-content: center;
   height: 100%;
+
+  &--center {
+    align-items: center;
+    justify-content: center;
+  }
+
+  &--column {
+    flex-direction: column;
+  }
 }

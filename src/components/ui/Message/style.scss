@@ -1,0 +1,16 @@
+.message {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  text-align: center;
+
+  &--success {
+    color: green;
+    border-color: green;
+  }
+
+  &--error {
+    color: red;
+    border-color: red;
+  }
+}

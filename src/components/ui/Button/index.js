@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import './style.scss';
 
-const Button = ({ text, onClick, type = 'button' }) => {
+const Button = ({ text, onClick = () => {}, type = 'button' }) => {
     return (
         <button className="button" type={type} onClick={onClick}>
             {text}
@@ -14,7 +14,7 @@ const Button = ({ text, onClick, type = 'button' }) => {
 Button.propTypes = {
     text: PropTypes.string.isRequired,
     type: PropTypes.string,
-    onClick: PropTypes.func.isRequired,
+    onClick: PropTypes.func,
 };
 
 export default Button;

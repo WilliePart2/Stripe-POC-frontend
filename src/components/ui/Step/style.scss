@@ -1,0 +1,32 @@
+$order-number-size: 40px;
+
+.step {
+  position: relative;
+  border-top: 1px solid lightgrey;
+  padding-top: 10px;
+
+  .step__order-number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -($order-number-size / 2);
+    margin-left: -($order-number-size / 2);
+    height: $order-number-size;
+    width: $order-number-size;
+    border-radius: 50%;
+    background-color: #aab7c4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--completed {
+      background-color: green;
+      color: white;
+    }
+  }
+
+  .step__content-container {
+    height: calc(100% - 10px);
+    width: 100%;
+  }
+}

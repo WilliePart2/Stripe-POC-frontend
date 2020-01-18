@@ -1,8 +1,9 @@
 import { serverApi } from "./endpoints";
-import { businessTypes, getStripeClientId } from "./stripeConstants";
+import { businessTypes, getStripeClientId, getStripePublishableApiKey } from "./stripeConstants";
 
 export {
     serverApi,
     businessTypes,
     getStripeClientId,
+    getStripePublishableApiKey,
 };
