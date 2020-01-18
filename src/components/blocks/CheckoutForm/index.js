@@ -33,7 +33,7 @@ const CheckoutForm = ({ stripe, elements, paymentIntentSecret }) => {
      */
     if (error) {
       setMessageType(ui.Message.ERROR);
-      setMessage('Error happened during payment');
+      setMessage('Error happened during the payment');
       return;
     }
 
